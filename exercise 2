@@ -1,0 +1,12 @@
+def get_freq_dict(string):
+string = string.lower()
+string = string.replace(" ", "")
+freq_dict = {}    
+for i in string:
+if i in freq_dict:
+freq_dict[i] += 1
+else:
+freq_dict[i] = 1
+return freq_dict
+string = "Hello World"
+print(get_freq_dict(string))
