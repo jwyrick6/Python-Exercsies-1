@@ -1,0 +1,15 @@
+n=0
+list1=[]
+summ=0
+while n<5:
+    a = input("Enter number: ")
+    
+    if((a).is_integer()==False):
+        print("Invalid input. Please enter another int.")
+    else:
+        list1.append(a)
+        summ = summ + a
+    n = n+1 
+    
+    
+print("The sum of your numbers is: ",summ)
